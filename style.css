@@ -1,11 +1,18 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.pagetitle {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
 }
 
+.screen {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    width: 700px;
+    height: 500px;
+}
 .grid {
-    width: 300px;
-    height: 150px;
-    color: red;
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
 }
