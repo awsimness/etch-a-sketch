@@ -1,18 +1,1 @@
-.pagetitle {
-    font-size: 30px;
-    font-family: monospace;
-    text-align: center;
-}
 
-.screen {
-    display: flex;
-    flex-wrap: wrap;
-    border: 5px solid black;
-    width: 700px;
-    height: 500px;
-}
-.grid {
-    border: 1px solid gray;
-    width: 30px;
-    height: 30px;
-}
