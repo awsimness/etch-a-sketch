@@ -1,1 +1,21 @@
+body {
+    background-color: gray;
+}
 
+.pageTitle {
+    font-family: monospace;
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    width: 600px;
+    height: 600px;
+    border: solid black;
+}
