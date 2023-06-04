@@ -1,3 +1,26 @@
+let screen=document.querySelector('.screen')
+let main=true
+let gridTwo=false
+let gridThree=false
+let dimensions=0;
+let boxSize=480/dimensions
+
+while (+dimensions<16||dimensions>50) {
+    dimensions=prompt('What dimension should the grid be?\nAnswer from 16 to\
+ 50')
+}
+
+for (i=0;i<256;i++) {
+    const div = document.createElement('div')
+    div.classList.add('box')
+    div.style.cssText=`border:solid 1px;background:white;padding:14px`
+    screen.appendChild(div)
+    div.addEventListener("mouseover",()=>{
+        div.style.backgroundColor='red';
+
+    })
+}
+
 
 
 var cssId = 'myCss';  // you could encode the css path itself to generate id..
