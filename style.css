@@ -16,6 +16,7 @@ body {
 .wrapper {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .screen {
@@ -26,3 +27,9 @@ body {
     flex-wrap: wrap;
 }
 
+.buttons {
+    color: aliceblue;
+    background-color: blue;
+    border-radius: 30px;
+    text-align: center;
+}

@@ -1,14 +1,29 @@
 let screen=document.querySelector('.screen')
 let main=true
-let gridTwo=false
-let gridThree=false
-let dimensions=0;
-let boxSize=480/dimensions
+let dimBt=document.querySelector('.dimBt')
 
-while (+dimensions<16||dimensions>50) {
-    dimensions=prompt('What dimension should the grid be?\nAnswer from 16 to\
+dimBt.addEventListener('click',()=>{
+    let dimensions=0;
+    while (+dimensions<16||dimensions>50) {
+        dimensions=prompt('What dimension should the grid be?\nAnswer from 16 to\
  50')
-}
+    }
+    screen.innerHTML=''
+    let boxSize=480/dimensions
+    boxSize=(boxSize/2)-1
+
+    for (i=0;i<dimensions**2;i++) {
+        const div = document.createElement('div')
+        div.classList.add('box')
+        div.style.cssText=`border:solid 1px;background:white;padding:${boxSize}px`
+        screen.appendChild(div)
+        div.addEventListener("mouseover",()=>{
+            div.style.backgroundColor='red';
+    
+        })
+    }
+
+})
 
 for (i=0;i<256;i++) {
     const div = document.createElement('div')
