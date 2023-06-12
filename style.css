@@ -27,9 +27,14 @@ body {
     flex-wrap: wrap;
 }
 
-.buttons {
-    color: aliceblue;
-    background-color: blue;
+
+.buttons button {
+    display: block;
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    width: 120px;
+    background-color: black;
     border-radius: 30px;
     text-align: center;
 }

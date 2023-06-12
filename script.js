@@ -1,6 +1,9 @@
 let screen=document.querySelector('.screen')
 let main=true
 let dimBt=document.querySelector('.dimBt')
+let colBt=document.querySelector('.colBt')
+let eraser=document.querySelector('.eraser')
+let color='red'
 
 dimBt.addEventListener('click',()=>{
     let dimensions=0;
@@ -18,7 +21,7 @@ dimBt.addEventListener('click',()=>{
         div.style.cssText=`border:solid 1px;background:white;padding:${boxSize}px`
         screen.appendChild(div)
         div.addEventListener("mouseover",()=>{
-            div.style.backgroundColor='red';
+            div.style.backgroundColor=`${color}`;
     
         })
     }
@@ -31,11 +34,18 @@ for (i=0;i<256;i++) {
     div.style.cssText=`border:solid 1px;background:white;padding:14px`
     screen.appendChild(div)
     div.addEventListener("mouseover",()=>{
-        div.style.backgroundColor='red';
+        div.style.backgroundColor=`${color}`;
 
     })
 }
 
+colBt.addEventListener('click',()=>{
+    color='pink'
+})
+
+eraser.addEventListener('click',()=>{
+    color='white'
+})
 
 
 var cssId = 'myCss';  // you could encode the css path itself to generate id..
